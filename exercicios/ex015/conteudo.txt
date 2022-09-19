@@ -1,0 +1,59 @@
+- shorthands = largura, estilo e cor > nessa ordem
+border: width style color;
+outline: width style color;
+
+- todo elemento de caixa possui quatro valores para padding e quatro para margin: superior (-top), direita (-right), inferior (-bottom), esquerda (-left)
+padding: top right bottom left
+margin: top right bottom left
+
+-tipos de caixa
+1. block-level = inicia em uma nova linha e ocupa a largura total do elemento onde ele está contido e  se não estiver contido em nenhuma outra caixa, ele vai ocupar 100% da largura do <body>
+<div> = mais conhecido
+.mais exemplos = h1-h6, p, main, header, nav, article, aside, footer, form, video
+
+2. inline-level = não começa em uma nova linha e sim no ponto exato onde foram definidos e largura ocupa apenas o tamanho relativo ao seu conteúdo
+<span> = mais conhecido
+.mais exemplos = a, code, small, strong, em, sup-sub, label, button, input, select
+
+-grouping tags e semantic tags
+<div> e <span> = html padrão tinha apenas essas duas 
+primeira block-level e segunda inline-level 
+após html5 são chamadas de não semânticas
+
+Header = cria áreas relativas ao cabeçalho
+.cabeçalho principal de um site ou até mesmo ocabeçalho de uma seção ou artigo
+.inclui títulos <h1> - <h6> e subtítulos
+.podem conter menus de navegação
+
+Nav = define uma área que possui os links de navegação pela estrutura de páginas que vão compor o website
+.pode estar dentro de um <header>
+
+Main = agrupador usado para delimitar o conteúdo principal do site
+.concentra: seções, artigos e conteúdos periféricos 
+
+Section = cria seções para páginas
+.pode conter conteúdo diretamente no seu corpo ou dividir os conteúdos em artigos com conteúdos específicos
+.segundo a documentação oficial da W3C, “uma seção é um agrupamento temático de conteúdos, tipicamente com um cabeçalho”
+
+Article = elemento que vai conter um conteúdo que pode ser lido de forma independente
+.diz respeito a um mesmo assunto
+.usar um <article> para delimitar um post de blog ou fórum, uma notícia, etc.
+
+Aside = delimita um conteúdo periférico e complementar ao conteúdo principal de um artigo ou seção. 
+.normalmente um conteúdo <aside> está posicionado ao lado de um determinado texto ou até mesmo no meio dele, exatamente como fizemos no bloco de texto apresentado anteriormente, falando sobre “MÚLTIPLOS NÍVEIS”
+
+Footer = cria um rodapé para o site inteiro, seção ou artigo 
+.é um conteúdo que não faz parte diretamente do conteúdo nem é um conteúdo periférico (o que caracterizaria um
+<aside>), mas possui informações sobre autoria do conteúdo, links adicionais, mapa do site, documentos relacionados
+
+-Sombras nas caixas
+.box-shadow = sempre nessa ordem : deslocamento > 
+1.horizontal = sombra anda pro lado direito(valores negativos deslocam para esquerda)
+2.vertical = sombra anda para baixo(valores negativos para cima)
+3.embaçamento = sombra se espalha pelo fundo
+4.cor = cor da sombra, é possível usar transparência
+
+-Bordas Decoradas
+.border-radius: px; = arredondar vértices
+.podemos usar 4 medidas diferentes para cada vértice
+.também é possível indicar dois valores

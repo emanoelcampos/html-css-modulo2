@@ -1,0 +1,14 @@
+pseudo-classes ( : ) -> definem estados de elementos dentro da HTML
+:hover -> quando eu passar o mouse por cima
+:visited -> diferenciar sites que já foram visitados
+:active -> pode ter uma cor durante clique
+
+pseudo-elementos ( :: ) -> pode agir nas, classes, elementos, ids > mexem diretamente no conteúdo periférico do elemento
+::afeter -> uma informação pode ser adicionada ao final do link
+::before -> uma informação pode ser adicionada ao início do link
+
+# = id
+. = class
+: = pseudo-class
+:: = pseudo-element
+> = children
